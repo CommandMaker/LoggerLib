@@ -17,3 +17,6 @@ Aperçu du BasicLogger :
 [Nom du logger] [ERROR] Message
 [Nom du logger] [FATAL] Message
 ```
+
+<h3>Logger</h3>
+Le Logger est un peu plus avancé que le ```BasicLogger```
