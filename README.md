@@ -27,4 +27,4 @@ Pour l'utiliser, vous devez écrire :
 Logger logger = LoggerRegister.registerLogger("Nom du logger");
 ```
 
-Importez bien le logger de    ```fr.command_maker.logger```.
+Importez bien le logger de ```fr.command_maker.logger```.
