@@ -10,7 +10,6 @@ BasicLogger logger = LoggerRegister.registerBasicLogger("Nom du logger");
 
 Aperçu du BasicLogger :
 
-
 ```
 [Nom du logger] [INFO] Message
 [Nom du logger] [WARN] Message
