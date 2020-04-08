@@ -28,3 +28,12 @@ Logger logger = LoggerRegister.registerLogger("Nom du logger");
 ```
 
 Importez bien le logger de ```fr.command_maker.logger```.
+
+Aperçu du Logger :
+
+```
+[2020-04-08 16:30:21] [INFO] [Nom du logger] message
+[2020-04-08 16:30:21] [WARN] [Nom du logger] message
+[2020-04-08 16:30:21] [ERROR] [Nom du logger] message
+[2020-04-08 16:30:21] [FATAL] [Nom du logger] message
+```
