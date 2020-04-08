@@ -20,6 +20,4 @@ Aperçu du BasicLogger :
 
 <h3>Logger</h3>
 
-Le Logger est un peu plus avancé que le 
-
-```BasicLogger```
+Le Logger est un peu plus avancé que le   ```BasicLogger```
