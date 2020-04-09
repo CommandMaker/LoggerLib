@@ -8,6 +8,12 @@ Pour utiliser le BasicLogger, vous devez écrire ce code :
 
 ```
 BasicLogger logger = LoggerRegister.registerBasicLogger("Nom du logger");
+
+logger.info("Message");
+logger.warn("Message");
+logger.error("Message");
+logger.fatal("Message");
+
 ```
 
 Aperçu du BasicLogger :
@@ -26,6 +32,11 @@ Pour l'utiliser, vous devez écrire :
 
 ```
 Logger logger = LoggerRegister.registerLogger("Nom du logger");
+
+logger.info("Message");
+logger.warn("Message");
+logger.error("Message");
+logger.fatal("Message");
 ```
 
 Importez bien le logger de ```fr.command_maker.logger```.
