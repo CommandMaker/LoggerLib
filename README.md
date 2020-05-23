@@ -7,14 +7,19 @@ Les verions de LoggerLib sont toutes disponibles <a href="https://github.com/Com
 Ou alors vous pouvez utiliser le repo maven :
 Gradle :
 ```gradle
+
+
 repositories {
+    // [...]
     maven {
-      url 'https://commandmaker.github.io/maven'
+        url "http://commandmaker.github.io/maven/"
     }
 }
 
+
 dependencies {
-  implementation 'fr.command_maker:loggerlib:1.1'
+    // [...]
+    compile 'fr.command_maker:loggerlib:1.1'
 }
 ```
 <h2>Utilisation</h2>
