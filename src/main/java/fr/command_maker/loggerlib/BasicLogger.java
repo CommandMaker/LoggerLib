@@ -1,9 +1,5 @@
 package fr.command_maker.loggerlib;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class BasicLogger {
 
     private String loggerName = "";
@@ -20,12 +16,16 @@ public class BasicLogger {
         System.out.println(log("WARN", msg));
     }
 
-    public void error(String msg){
+    public void error(String msg) {
         System.out.println(log("ERROR", msg));
     }
 
-    public void fatal(String msg){
+    public void fatal(String msg) {
         System.out.println(log("FATAL", msg));
+    }
+
+    public void custom(int levelId, String msg) {
+      System.out.println(log(Var.customsLevels.get(levelId).getLevelName(), msg));
     }
 
     private String log(String level, String msg){

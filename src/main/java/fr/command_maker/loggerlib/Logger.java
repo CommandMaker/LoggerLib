@@ -28,6 +28,10 @@ public class Logger {
         System.out.println(log("FATAL", msg));
     }
 
+    public void custom(int id, String msg) {
+        System.out.println(log(Var.customsLevels.get(id).getLevelName(), msg));
+    }
+
     private String log(String level, String msg){
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         StringBuilder b = new StringBuilder();
