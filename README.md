@@ -6,22 +6,6 @@ L'apparence du Logger est basée sur le Logger Wylog de Wytrem (https://github.c
 Les verions de LoggerLib sont toutes disponibles <a href="https://github.com/CommandMaker/LoggerLib/releases">ici</a> !
 Ou alors vous pouvez utiliser le repo maven :
 Gradle :
-```gradle
-
-
-repositories {
-    // [...]
-    maven {
-        url "http://commandmaker.github.io/maven/"
-    }
-}
-
-
-dependencies {
-    // [...]
-    compile 'fr.command_maker:loggerlib:1.1'
-}
-```
 <h2>Utilisation</h2>
 <h3>BasicLogger</h3>
 Pour utiliser le BasicLogger, vous devez écrire ce code :
@@ -69,14 +53,3 @@ Aperçu du Logger :
 [2020-04-08 16:30:21] [ERROR] [Nom du logger] message
 [2020-04-08 16:30:21] [FATAL] [Nom du logger] message
 ```
-<h3>Niveaux personnalisés</h3>
-L'une des nouvelles fonctionnalités de cette nouvelle version est les niveaux personnalisés. Cela permet de remplacer les niveaux de base (```INFO```,```WARN```,```ERROR```,```FATAL```) par des niveaux comme par exemple ```Téléchargemet```, ```Lancement```...
-Pour cela vous devez faire :
-```java
-LoggerRegister.registerCustomLoggerLevel(new LoggerLevel("Téléchargement"), new LoggerLevel("Lancement"));
-
-Logger logger = LoggerRegister.registerLogger("Logger");
-logger.custom(0, "Message");
-```
-La ligne ```java logger.custom(0, "Message");``` sera ```[2020-05-23 11:46:35] [Téléchargement] [Logger] Message```
-La ligne ```java logger.custom(1, "Message");``` sera ```[2020-05-23 11:46:35] [Lancement] [Logger] Message```
