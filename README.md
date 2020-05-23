@@ -4,8 +4,22 @@ LoggerLib est une librairie Java permettant de simplifier l'utilisation du Logge
 L'apparence du Logger est basée sur le Logger Wylog de Wytrem (https://github.com/wytrem/WyLog).
 <h2>Téléchargement</h2>
 Les verions de LoggerLib sont toutes disponibles <a href="https://github.com/CommandMaker/LoggerLib/releases">ici</a> !
-Ou alors vous pouvez utiliser le repo maven :
+Ou alors vous pouvez utiliser le repo :
 Gradle :
+```gradle
+repositories {
+    // [...]
+    maven {
+        url "http://commandmaker.github.io/maven/"
+    }
+}
+
+
+dependencies {
+    // [...]
+    compile 'fr.command_maker:loggerlib:1.1'
+}
+```
 <h2>Utilisation</h2>
 <h3>BasicLogger</h3>
 Pour utiliser le BasicLogger, vous devez écrire ce code :
