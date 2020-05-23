@@ -6,7 +6,7 @@ L'apparence du Logger est basée sur le Logger Wylog de Wytrem (https://github.c
 Les verions de LoggerLib sont toutes disponibles <a href="https://github.com/CommandMaker/LoggerLib/releases">ici</a> !
 Ou alors vous pouvez utiliser le repo :
 Gradle :
-```gradle
+```
 repositories {
     // [...]
     maven {
