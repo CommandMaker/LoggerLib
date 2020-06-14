@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Logger {
+public class Logger extends Var {
 
     private String name = "";
 
@@ -29,7 +29,7 @@ public class Logger {
     }
 
     public void custom(int id, String msg) {
-        System.out.println(log(Var.customsLevels.get(id).getLevelName(), msg));
+        System.out.println(log(customsLevels.get(id).getLevelName(), msg));
     }
 
     private String log(String level, String msg){

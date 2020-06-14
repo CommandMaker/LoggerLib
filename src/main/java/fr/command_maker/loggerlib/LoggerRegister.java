@@ -3,7 +3,7 @@ package fr.command_maker.loggerlib;
 import fr.command_maker.loggerlib.custom.LoggerLevel;
 import java.util.Arrays;
 
-public class LoggerRegister {
+public class LoggerRegister extends Var {
 
     public static BasicLogger registerBasicLogger(String name){
         return new BasicLogger(name);
@@ -13,7 +13,7 @@ public class LoggerRegister {
         return new Logger(loggerName);
     }
 
-    public static void registerCustomLoggerLevel(LoggerLevel... customLevel) {
-        Var.customsLevels.addAll(Arrays.asList(customLevel));
+    public void registerCustomLoggerLevel(LoggerLevel... customLevel) {
+        customsLevels.addAll(Arrays.asList(customLevel));
     }
 }

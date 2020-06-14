@@ -1,6 +1,6 @@
 package fr.command_maker.loggerlib;
 
-public class BasicLogger {
+public class BasicLogger extends Var {
 
     private String loggerName = "";
 
@@ -25,7 +25,7 @@ public class BasicLogger {
     }
 
     public void custom(int levelId, String msg) {
-      System.out.println(log(Var.customsLevels.get(levelId).getLevelName(), msg));
+      System.out.println(log(customsLevels.get(levelId).getLevelName(), msg));
     }
 
     private String log(String level, String msg){

@@ -2,7 +2,7 @@ package fr.command_maker.loggerlib.custom;
 
 import fr.command_maker.loggerlib.Var;
 
-public class LoggerLevel {
+public class LoggerLevel extends Var {
 
   private String name = "";
   private LoggerLevel instance;
@@ -12,6 +12,8 @@ public class LoggerLevel {
     this.instance = this;
   }
 
+  public LoggerLevel() {}
+
   public String getLevelName() {
     return name;
   }
@@ -20,7 +22,7 @@ public class LoggerLevel {
     return instance;
   }
 
-  public static LoggerLevel getLevelById(int id) {
-    return Var.customsLevels.get(id).getLoggerLevel();
+  public LoggerLevel getLevelById(int id) {
+    return customsLevels.get(id).getLoggerLevel();
   }
 }
